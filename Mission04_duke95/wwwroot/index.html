@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<!--Author: Dallin Duke-->
+<!--Description: Build an ASP.NET Web App using the same structure as in the "Building First Web App" series
+of videos.-->
+
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!--Creating Website Title-->
+    <title>About Dallin Duke</title>
+
+    <!--Adding Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!--Adding Bootstrap-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--Adding CSS sheet-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Perferred Name header tag-->
+    <h1>The Duke</h1>
+
+    <!--Calling image to be displayed-->
+    <img src="img/Fishing.jpg"  width="300" height="400"/>
+
+    <br />
+
+    <!--Creating a paragraph about what I hope to get out of this class-->
+    <p>
+        I hope to become a better programmer and become more confident in programming.<br /> I have constantly struggled with programming, but I continue to hope that the more I program the more that will make sense.<br />
+        I am excited to learn C#, Javascript, Jquery, and react and also nervous since they are mostly new to me. <br /> I also hope how to learn how to make awesome websites!
+    </p>
+
+    <!--Creating an ordered list-->
+    <ol>
+        <li>Information Security Analyst</li>
+        <li>Network Engineer</li>
+        <li>Someday to be Chief Information Security Officer</li>
+    </ol>
+
+    <!--Creating a form to create the Grade Calculator-->
+    <form>
+        <h2>Grade Calculator</h2>
+        <label>Assignments (Enter Percentage 0 - 100)</label>
+        <input id="assignmentPercentage" type="number" /><br />
+        <label>Group Project (Enter Percentage 0 - 100)</label>
+        <input id="groupPercentage" type="number" /><br />
+        <label>Quizzes (Enter Percentage 0 - 100)</label>
+        <input id="quizPercentage" type="number" /><br />
+        <label>Midterm Exam (Enter Percentage 0 - 100)</label>
+        <input id="midtermPercentage" type="number" /><br />
+        <label>Final Exam (Enter Percentage 0 - 100)</label>
+        <input id="finalPercentage" type="number" /><br />
+        <label>Intex (Enter Percentage 0 - 100)</label>
+        <input id="intexPercentage" type="number" /><br />
+        <input id="calculateGrade" type="button" value="Calculate Grade" />
+        <br />
+        <label id="showGrade"></label>
+    </form>
+
+    <!--Include remaining jquery, js, and js bootrap sources-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/GradeCalculator.js"></script>
+</body>
+</html>
