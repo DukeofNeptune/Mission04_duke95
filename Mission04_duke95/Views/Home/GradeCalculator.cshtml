@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "About Dallin Duke";
+}
+
+
+@model GradeCalculatorModel;
+<!--Creating a form to create the Grade Calculator and set it into a dedicated view-->
+
+<form method="Post">
+    <h2>Grade Calculator</h2>
+    <label>Assignments (Enter Percentage 0 - 100)</label>
+    <input id="assignmentPercentage" asp-for="Assignments" type="number" /><br />
+    <label>Group Project (Enter Percentage 0 - 100)</label>
+    <input id="groupPercentage" asp-for="Group" type="number" /><br />
+    <label>Quizzes (Enter Percentage 0 - 100)</label>
+    <input id="quizPercentage" asp-for="Quiz" type="number" /><br />
+    <label>Midterm Exam (Enter Percentage 0 - 100)</label>
+    <input id="midtermPercentage" asp-for="Midterm" type="number" /><br />
+    <label>Final Exam (Enter Percentage 0 - 100)</label>
+    <input id="finalPercentage" asp-for="Final" type="number" /><br />
+    <label>Intex (Enter Percentage 0 - 100)</label>
+    <input id="intexPercentage" asp-for="Intex" type="number" /><br />
+    <input id="calculateGrade" type="submit" value="Calculate Grade" />
+    <br />
+    <label id="showGrade"></label>
+    <div asp-validation-summary="All"> </div>
+</form>
+
+<script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+<script src="~/js/GradeCalculator.js"></script>
+

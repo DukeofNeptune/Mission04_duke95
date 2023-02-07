@@ -65,6 +65,6 @@ $("#calculateGrade").click(function () {
     }
     //Display final percentage and grade
 
-    $("#showGrade").html("Your final grade percentage is: " + finalGrade + " and your final letter grade is: " + letterGrade);
+    alert("Your final grade percentage is: " + finalGrade + " and your final letter grade is: " + letterGrade);
 
 });

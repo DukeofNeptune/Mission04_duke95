@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+
+    <!--Creating Website Title-->
+    <title>@ViewData["Title"]</title>
+
+    <!--Adding Favicon-->
+    <link rel="icon" type="image/x-icon" href="~/img/favicon.ico">
+
+    <!--Adding Bootstrap-->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--Adding CSS sheet-->
+    <link href="~/css/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
